@@ -36,15 +36,15 @@ Product.init(
         allowNull: false,
         defaultValue: 10,
         validate: {
-            isNumeric,
+            isNumeric: true,
         },
     },
 
     category_id: {
         type: DataTypes.INTEGER,
         references: {
-            model: Category,
-            key: id,
+            model: 'Category',
+            key: 'id',
         },
     },  
   },
